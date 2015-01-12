@@ -40,7 +40,7 @@
         <call>
             <endpoint>
                 <http method="GET"
-                      uri-template="https://www.eventbriteapi.com/users/{uri.var.userId}/owned_events/?{uri.var.apiParameters}token={uri.var.eventbrite.accessToken}"/>
+                      uri-template="{uri.var.eventbrite.apiUrl}/users/{uri.var.userId}/owned_events/?{uri.var.apiParameters}token={uri.var.eventbrite.accessToken}"/>
                 <property name="Accept" value="*/*" scope="transport"/>
             </endpoint>
         </call>
